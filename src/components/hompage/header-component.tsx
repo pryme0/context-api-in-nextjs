@@ -16,6 +16,7 @@ const HeaderContainer = styled.div`
   width: 100%;
   background-color: #decbcb;
   padding: 30px 0px;
+  position: fixed;
 `;
 
 const HeaderText = styled.h3`
