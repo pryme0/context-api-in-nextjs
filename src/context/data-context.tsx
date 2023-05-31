@@ -14,7 +14,6 @@ export function DataProvider({ children }: { children: JSX.Element }) {
 
   useEffect(() => {
     axios.get("https://rickandmortyapi.com/api/character").then((data) => {
-      console.log({ pos: data?.data });
       setNextLink(data?.data.next);
       setTotalPages(data?.data.pages);
       setCharacters(data?.data.results);
